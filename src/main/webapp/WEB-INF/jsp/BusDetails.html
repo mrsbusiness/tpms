@@ -1,0 +1,254 @@
+<html>
+<head> 
+<title>Bus Details Form</title>
+<style type="text/css">
+
+
+table {
+    
+    display: table;
+    border-collapse: separate;
+    border-style: hidden;
+    border-spacing: 1px;
+    border-color:gray;
+  }
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<br><br>
+
+<form name ="bus" method="POST">
+<table border="1"; align="center">
+
+<tr><td colspan="2" align="Center"><h2> Bus Details</h2></td>
+</tr>
+
+<tr>
+<td><br>&nbsp;&nbsp;Bus Number :</td>
+<td><br>&nbsp;&nbsp;TS <input type="text" name="busno" size="8" maxlength="12"></td>
+</tr>
+
+<tr>
+<td><br>&nbsp;&nbsp;Bus Type :</td>
+<td><br>&nbsp;&nbsp;<select name="Startdate">
+	<option> - Type - </option>
+	<option value="Express">EXP</option>
+	<option value="PVG">PVG</option></td>
+</tr>
+
+<tr>
+<td colspan="2"><br>&nbsp;&nbsp;Bus Make :&nbsp;<input type="text" name="Make">&nbsp;&nbsp;Bus Model :&nbsp;<input type="text" name="Model">&nbsp;&nbsp;Year :&nbsp;<input type="text" name="Year" size="5" maxlength="4"></td>
+</tr>
+
+<tr>
+<td><br>&nbsp;&nbsp;Route Number :</td>
+<td><br>&nbsp;&nbsp;<select name="routeno">
+	<option>- Route no -</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option></td>
+</tr>
+
+<tr>
+<td><br>&nbsp;&nbsp;From Place :</td>
+<td><br>&nbsp;&nbsp;<select name="FromRoute">
+	<option> - Route - </option>
+	<option value="NKD">Narayankhed</option>
+	<option value="SIDDIPET">Siddipet</option></td>
+</tr>
+
+<tr>
+<td><br>&nbsp;&nbsp;To place :</td>
+<td><br>&nbsp;&nbsp;<select name="FromRoute">
+	<option> - Route - </option>
+	<option value="JBS">Jubilee Bus station</option>
+	<option value="B'KUNDA-MGBS">B'KUNDA-MGBS</option>
+        <option value="TADKAL-MGBS">TADKAL-MGBS</option>
+	<option value="KANGTI">KANGTI</option>
+       <option value="KAMKOLE">KAMKOLE</option>
+	<option value="HYD">HYD</option></td>
+</tr>
+
+<tr>
+<td><br>&nbsp;&nbsp;Kilometers :</td>
+<td><br>&nbsp;&nbsp;<input type="text" name="rs" size="4" maxlength="3">/day</td>
+</tr>
+
+<tr>
+<td><br>&nbsp;&nbsp;Price per Km :</td>
+<td><br>&nbsp;&nbsp;Rs <input type="text" name="rs" size="4" maxlength="3">&nbsp;&nbsp;<input type="text" name="paise"size="3"maxlength="3">Paise</td>
+</tr>
+
+<tr>
+<td><br>&nbsp;&nbsp;Driver1 name :</td>
+<td><br>&nbsp;&nbsp;Last Name<input type="text" name="driver1"> First Name :&nbsp;&nbsp;<input type="text" name="driver1"></td>
+</tr>
+
+<tr>
+<td><br>&nbsp;&nbsp;Driver1 Phone number :</td>
+<td><br>&nbsp;&nbsp;Cell 1:&nbsp;&nbsp;<input type="text" name="Cell" size="11" maxlength ="10"> Home Phone:&nbsp;&nbsp;<input type="text" name="HomePh" size="11" maxlength ="11"></td>
+</tr>
+
+<tr>
+<td><br>&nbsp;&nbsp;Driver2 name :</td>
+<td><br>&nbsp;&nbsp;Last Name<input type="text" name="driver1"> First Name :&nbsp;&nbsp;<input type="text" name="driver1"></td>
+</tr>
+
+<tr>
+<td><br>&nbsp;&nbsp;Driver2 Phone number :</td>
+<td><br>&nbsp;&nbsp;Cell 1:&nbsp;&nbsp;<input type="text" name="Cell" size="11" maxlength ="10"> Home Phone:&nbsp;&nbsp;<input type="text" name="HomePh" size="11" maxlength ="11"></td>
+</tr>
+
+
+
+<tr><td><br>&nbsp;&nbsp;Driver1 Work Start Date :&nbsp;&nbsp;</td>
+<td><br>&nbsp;&nbsp;<select name="JobDay">
+	<option> - Day - </option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+</select>
+
+<select name="Startmonth">
+	<option> - Month - </option>
+	<option value="January">January</option>
+	<option value="Febuary">Febuary</option>
+	<option value="March">March</option>
+	<option value="April">April</option>
+	<option value="May">May</option>
+	<option value="June">June</option>
+	<option value="July">July</option>
+	<option value="August">August</option>
+	<option value="September">September</option>
+	<option value="October">October</option>
+	<option value="November">November</option>
+	<option value="December">December</option>
+</select>
+
+<select name="startYear">
+	<option> - Year - </option>
+        <option value="2019">2019</option>
+	<option value="2018">2018</option>
+	<option value="2017">2017</option>
+	<option value="2016">2016</option>
+	<option value="2015">2015</option>
+	
+</select>
+</td></tr>
+
+
+<tr><td><br>&nbsp;&nbsp;Driver2 Work Start Date :&nbsp;&nbsp;</td>
+<td><br>&nbsp;&nbsp;<select name="JobDay">
+	<option> - Day - </option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+</select>
+
+<select name="Startmonth">
+	<option> - Month - </option>
+	<option value="January">January</option>
+	<option value="Febuary">Febuary</option>
+	<option value="March">March</option>
+	<option value="April">April</option>
+	<option value="May">May</option>
+	<option value="June">June</option>
+	<option value="July">July</option>
+	<option value="August">August</option>
+	<option value="September">September</option>
+	<option value="October">October</option>
+	<option value="November">November</option>
+	<option value="December">December</option>
+</select>
+
+<select name="startYear">
+	<option> - Year - </option>
+        <option value="2019">2019</option>
+	<option value="2018">2018</option>
+	<option value="2017">2017</option>
+	<option value="2016">2016</option>
+	<option value="2015">2015</option>
+	
+</select>
+</td></tr>
+<tr><td><br>&nbsp;&nbsp;Driver1 Licence Number :&nbsp;&nbsp;</td>
+<td><br>&nbsp;&nbsp;<input type="text" name="DLno" size="12" maxlength ="11"></td>
+</tr>
+
+<tr><td><br>&nbsp;&nbsp;Driver2 Licence Number :&nbsp;&nbsp;</td>
+<td><br>&nbsp;&nbsp;<input type="text" name="DLno" size="12" maxlength ="11"></td>
+</tr>
+
+
+<tr><td colspan="2" align="center"><br><input type="button"  value="submit"/></td></tr>
+
+</table>
+</form>
+</body>
+</html>
