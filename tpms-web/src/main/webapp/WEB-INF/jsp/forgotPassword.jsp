@@ -22,10 +22,10 @@ div {
     <body>
 
  <div style="width:300px;height:150px;border:6px outset red;">
-        <align:center>
+        
              
-        <form name="login">
-<center>
+        </center> <form name="login"><center>
+
 
              <br><br>
             Username <input type="text" name="userid" />

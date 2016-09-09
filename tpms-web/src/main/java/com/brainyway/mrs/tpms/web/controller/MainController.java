@@ -17,30 +17,38 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class MainController {
 
-		@RequestMapping(value = "/admin**", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/home", method = RequestMethod.POST)
 	public ModelAndView adminPage() {
 
 		ModelAndView model = new ModelAndView();
 		model.addObject("title", "TPS Admin Page");
 		model.addObject("message", "This page is for ROLE_ADMIN only!");
-		model.setViewName("admin");
+		model.setViewName("home");
+
+		return model;
+
+	}
+
+	@RequestMapping(value = "/admin/activebuses", method = RequestMethod.GET)
+	public ModelAndView createEmployee() {
+
+		ModelAndView model = new ModelAndView();
+		model.addObject("title", "TPMS Active Buses");
+		model.addObject("message", "This page is for Active buses only!");
+		model.setViewName("./activeBusData");
 
 		return model;
 
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public ModelAndView login(@RequestParam(value = "error", required = false) String error,
-			@RequestParam(value = "logout", required = false) String logout, HttpServletRequest request) {
+	public ModelAndView login(
+			@RequestParam(value = "error", required = false) String error,
+			@RequestParam(value = "logout", required = false) String logout,
+			HttpServletRequest request) {
 
 		ModelAndView model = new ModelAndView();
-		if (error != null) {
-			model.addObject("error", getErrorMessage(request, "SPRING_SECURITY_LAST_EXCEPTION"));
-		}
 
-		if (logout != null) {
-			model.addObject("msg", "You've been logged out successfully.");
-		}
 		model.setViewName("login");
 
 		return model;
@@ -50,7 +58,8 @@ public class MainController {
 	// customize the error message
 	private String getErrorMessage(HttpServletRequest request, String key) {
 
-		Exception exception = (Exception) request.getSession().getAttribute(key);
+		Exception exception = (Exception) request.getSession()
+				.getAttribute(key);
 
 		String error = "";
 		if (exception instanceof BadCredentialsException) {
@@ -71,7 +80,8 @@ public class MainController {
 		ModelAndView model = new ModelAndView();
 
 		// check if user is login
-		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		Authentication auth = SecurityContextHolder.getContext()
+				.getAuthentication();
 		if (!(auth instanceof AnonymousAuthenticationToken)) {
 			UserDetails userDetail = (UserDetails) auth.getPrincipal();
 			System.out.println(userDetail);

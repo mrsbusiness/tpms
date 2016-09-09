@@ -20,7 +20,7 @@ public class TPMSUserDaoImpl implements TPMSUserDao {
 
 		List<TPMSUser> users = new ArrayList<TPMSUser>();
 
-		users = sessionFactory.getCurrentSession().createQuery("from User where username=?").setParameter(0, username)
+		users = sessionFactory.getCurrentSession().createQuery("from TPMSUser where username=?").setParameter(0, username)
 				.list();
 
 		if (users.size() > 0) {
