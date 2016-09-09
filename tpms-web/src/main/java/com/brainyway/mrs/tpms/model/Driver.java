@@ -4,11 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 
-@Entity
-@Table(name="driver")
+//@Entity
+//@Table(name="driver")
 public class Driver extends Employee {
 	
 	private String licenseNumber;
-	private String badgeNumber;
 
 }

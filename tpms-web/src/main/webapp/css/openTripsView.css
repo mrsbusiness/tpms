@@ -1,0 +1,87 @@
+.rTable {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	
+	}
+
+.rTableRow {
+	display: table-row;
+}
+
+.rTableHeading {
+	display: table-header-group;
+	background-color: #ddd;
+}
+
+.rTableCell, .rTableHead {
+	display: table-cell;
+	padding: 12px 15px;
+   	border: 1px solid #999999;
+}
+
+.rTableCellCheckOut
+{
+	display:  table-cell;
+	padding: 12px 15px;
+	border: 1px solid #999999;
+}
+
+.rTableCellDelete
+{
+	display:  table-cell;
+	padding: 12px 15px;
+	border: 1px solid #999999;
+}
+
+.rTableCellCheckOut a:link
+{
+	color:white;
+}
+
+.rTableCellCheckOut a:hover
+{
+background: #314b60;
+box-shadow: inset 0 0 10px 1px rgba(0,0,0,.3);
+}
+
+.rTableCellCheckOut a:visited
+{
+color:red;
+box-shadow: inset 0 0 10px 1px rgba(0,0,0,.3);
+}
+
+
+.rTableCellDelete a:link
+{
+	color:white;
+}
+
+.rTableCellDelete a:hover
+{
+background: #314b60;
+box-shadow: inset 0 0 10px 1px rgba(0,0,0,.3);
+}
+
+.rTableCellDelete a:visited
+{
+color:red;
+box-shadow: inset 0 0 10px 1px rgba(0,0,0,.3);
+}
+
+
+.rTableHeading {
+	display: table-header-group;
+	background-color: #ddd;
+	font-weight: bold;
+}
+
+.rTableFoot {
+	display: table-footer-group;
+	font-weight: bold;
+	background-color: #ddd;
+}
+
+.rTableBody {
+	display: table-row-group;
+}

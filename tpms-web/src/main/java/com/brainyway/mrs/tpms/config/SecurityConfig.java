@@ -28,6 +28,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
+		System.out.println("In Security Config method");
 		http.authorizeRequests().antMatchers("/admin/**")
 			.access("hasRole('ROLE_ADMIN')").and().formLogin()
 			.loginPage("/login").failureUrl("/login?error")
